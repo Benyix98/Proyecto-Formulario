@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+<link rel="stylesheet" href="estilos.css"
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <h1 id="title">Formulario de encuesta</h1>
+  <p id="description">Gracias por contestar esta serie de preguntas</p>
+  <form id="survey-form">
+    <div id="contenedor">
+        <label id="name-label">NOMBRE</label><br>
+        <input id="name" type="text" required for="survey-form" placeholder="Escriba su nombre"><br>
+        <label id="email-label">EMAIL</label><br>
+        <input id="email" type="email" required for="survey-form" placeholder="Inserta tu correo"><br>
+          <label id="number-label">EDAD</label><br>
+        <input id="number" type="number" required for="survey-form" min="16" max="120" placeholder="Edad"><br>
+      <hr>
+      <div>
+        <p>Escoge tu actual situacion</p>
+        <select id="dropdown" class="selector">
+          <option>Selecciona una opcion</option>
+          <option>Estudiante</option>
+          <option>Trabajador</option>
+          <option>Sin trabajo</option>
+        </select>
+      </div>
+      <hr>
+      <div>
+        <div>
+        <label>
+          <p>¿Recomendarias esta pagina?</p>
+          <input class="in1" type="radio" value="Obviamente" name="recomend">Obviamente<br>
+          <input class="in1" type="radio" value="Si" name="recomend">Si
+        </label>
+        </div>
+        <div>
+        <label>
+          <input class="in2" type="radio" value="Quizas" name="recomend">Quizas<br>
+                    <input class="in2" type="radio" value="Talvez" name="recomend">Tal vez
+        </label>
+        </div>
+        <div>
+        <label>
+          <input class="in3" type="radio" value="No estoy seguro" name="recomend">No estoy seguro<br>
+          <input class="in4" type="radio" value="No" name="recomend">No
+        </label>
+        </div>
+        <hr>
+      </div>
+      <div>
+        <p>¿Que te gustaria que la pagina tuviera?</p>
+        <label>
+          <input class="pre1" type="checkbox" value="Ofertas de trabajo" name="prefer">Ofertas de trabajo
+        </label><br>
+        <label>
+          <input class="pre2" type="checkbox" value="Titulaciones" name="prefer">Titulaciones
+        </label><br>
+        <label>
+          <input class="pre3" type="checkbox" value="Cursos online" name="prefer">Cursos online
+        </label><br>
+        <label>
+          <input class="pre4" type="checkbox" value="Asesorias" name="prefer">Asesorias
+        </label>
+        <hr>
+      </div>
+      <div>
+        <p>Deje aqui su opinion acerca de nosotros.</p>
+        <textarea class="textarea"></textarea>
+      </div>
+      <div >
+        <input type="submit" class="submit" id="submit">
+      </div>
+    </div>
+  </form>
+</body>
